@@ -24,8 +24,3 @@ $app->group(['prefix' => 'companies'], function () use ($app) {
 
     $app->post('/{company_id}/people/', 'CompanyController@addNewPerson');
 });
-
-// People
-$app->group(['prefix' => 'api/people'], function () use ($app) {
-    $app->get('/', 'PersonController@index');
-});
