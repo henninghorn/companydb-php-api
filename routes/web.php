@@ -16,7 +16,7 @@ $app->get('/', function () use ($app) {
 });
 
 // Companies
-$app->group(['prefix' => 'api/companies'], function () use ($app) {
+$app->group(['prefix' => 'companies'], function () use ($app) {
     $app->get('/', 'CompanyController@index');
     $app->get('/{id}', 'CompanyController@show');
     $app->post('/', 'CompanyController@store');
